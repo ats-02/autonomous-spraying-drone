@@ -1,0 +1,7 @@
+ultralytics
+opencv-python
+mavsdk
+gpiozero
+numpy
+picamera2
+asyncio
