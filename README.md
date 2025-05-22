@@ -80,8 +80,11 @@ README.md             # Project documentation
 👤 Contributor
 
 Athul Suresh — Project Lead, Developer & Vision System Integration
+
 Dushyant Panwar — Hardware Integration & Image Labeling
+
 Aditya Nimeshkumar Dalsaniya — Image Processing & Detection Pipeline
+
 Dilraj Singh — Image Processing & Detection Pipeline
 
 
