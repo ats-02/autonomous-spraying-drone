@@ -62,18 +62,23 @@ pip install -r requirements.txt
 👤 Contributor
 
 Athul Suresh – Project Lead & System Integration
+
 Conceived the project, developed the MAVSDK-based autonomous flight system, and integrated YOLOv8 detection with real-time spraying.
 
 Dushyant – Technical Co-Lead – Hardware & Model Training
+
 Collaborated on system design, managed hardware integration, labeled datasets, and co-trained the YOLOv8 model.
 
 Aditya Nimeshkumar Dalsaniya – Drone Pilot & Detection Support
+
 Piloted the drone during testing and assisted with detection system setup and hardware troubleshooting.
 
 Dilraj – Detection Workflow Support
+
 Contributed to the initial setup of the detection pipeline and assisted in early-stage testing.
 
 Dr. M. Mahadeeswara Yadav - Faculty Mentor(Assistant Professor, UPES Dehradun)
+
 Provided overall project supervision and academic guidance throughout the development.
 
 
