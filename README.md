@@ -2,11 +2,9 @@ Autonomous Spraying Drone for Rose Detection 🌹
 
 An AI-powered agricultural drone system built for precision spraying. This drone autonomously detects target plants (e.g., Rose flowers) in real time using a YOLOv8 model, hovers over them, activates a GPIO-controlled pump, and resumes its flight — all while navigating a programmed path.
 
-
 🚀 Overview
 
 This project integrates computer vision with autonomous drone flight using Raspberry Pi 5 and Pixhawk 2.4.8. The Raspberry Pi runs a custom-trained YOLOv8 model on a PiCamera2 video feed. On detecting the "Rose" class with sufficient confidence, the drone hovers, ascends, sprays via a pump, and then resumes its mission using MAVSDK-based waypoint control.
-
 
 🧠 Key Features
 
@@ -16,8 +14,6 @@ This project integrates computer vision with autonomous drone flight using Raspb
 - GPIO-controlled relay spraying system (3-second trigger)
 - Hover-align-spray-resume logic
 - Modular and expandable to other crops or diseases
-
-
 
 🧰 Technologies Used
 
@@ -30,8 +26,6 @@ This project integrates computer vision with autonomous drone flight using Raspb
 | MAVSDK (Python)   | For drone mission control                    |
 | gpiozero          | GPIO control for spraying system             |
 | OpenCV + asyncio  | Detection, visualization, and timing         |
-
-
 
 📦 Installation
 
@@ -48,7 +42,6 @@ pip install -r requirements.txt
 
 3. Place your `best.pt` YOLOv8 weights in the `/models` folder  
    
-
 🛠️ How It Works
 
 1. Drone takes off and moves forward using MAVSDK.
@@ -57,17 +50,6 @@ pip install -r requirements.txt
 4. Drone hovers, ascends slightly, and sprays via GPIO relay.
 5. After spraying for 3 seconds, it descends and resumes flight.
 6. Once the path is completed, the drone lands automatically.
-
-
-📁 Folder Structure
-
-
-main.py               # Main script for detection + flight + spraying
-models/best.pt        # YOLOv8 trained weights (optional to upload)
-media/                # Output image and test video
-requirements.txt      # List of Python libraries
-README.md             # Project documentation
-
 
 🌱 Future Scope
 
@@ -79,14 +61,19 @@ README.md             # Project documentation
 
 👤 Contributor
 
-Athul Suresh — Project Lead, Developer & Vision System Integration
+Athul Suresh – Project Lead & System Integration
+Conceived the project, developed the MAVSDK-based autonomous flight system, and integrated YOLOv8 detection with real-time spraying.
 
-Dushyant Panwar — Hardware Integration & Image Labeling
+Dushyant – Technical Co-Lead – Hardware & Model Training
+Collaborated on system design, managed hardware integration, labeled datasets, and co-trained the YOLOv8 model.
 
-Aditya Nimeshkumar Dalsaniya — Image Processing & Detection Pipeline
+Aditya Nimeshkumar Dalsaniya – Drone Pilot & Detection Support
+Piloted the drone during testing and assisted with detection system setup and hardware troubleshooting.
 
-Dilraj Singh — Image Processing & Detection Pipeline
+Dilraj – Detection Workflow Support
+Contributed to the initial setup of the detection pipeline and assisted in early-stage testing.
 
-
+Dr. M. Mahadeeswara Yadav - Faculty Mentor(Assistant Professor, UPES Dehradun)
+Provided overall project supervision and academic guidance throughout the development.
 
 
